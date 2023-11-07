@@ -33,5 +33,6 @@ connection.once('open', async () => {
 
   await User.collection.insertMany(users);
   console.log(users);
+  console.timeEnd('seeding complete 🌱');
   process.exit(0);
 });
